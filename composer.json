@@ -1,0 +1,15 @@
+{
+    "name": "test-php/alemenciones",
+    "autoload": {
+        "psr-4": {
+            "TestPhp\\Alemenciones\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ale Menciones",
+            "email": "alemenciones@gmail.com"
+        }
+    ],
+    "require": {}
+}
