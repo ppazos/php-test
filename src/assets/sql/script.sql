@@ -78,6 +78,7 @@ ALTER TABLE `user`
 --
 ALTER TABLE `cpt`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  ADD UNIQUE KEY `code` (`code`);
 
 --
 -- AUTO_INCREMENT de la tabla `user`
