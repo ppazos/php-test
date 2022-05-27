@@ -18,8 +18,8 @@ Este repositorio define una tarea para evaluar las habilidades de comprensión y
    3. El usuario ingresa email y password erróneos
    4. La aplicación muestra el login y un mensaje error
    5. El usuario ingresa email y password correctos
-
    6. La aplicación muestra una pantalla de listado de códigos de diagnósticos vacía
+
    7. El usuario hace clic en el botón "upload"
    8. La aplicación muestra una ventana modal con un formulario que tiene un file picker y un botón "upload"
    9. El usuario hace clic en el file picker

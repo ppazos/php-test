@@ -90,6 +90,5 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
-
 INSERT INTO user (email, password) VALUES ('alemenciones@gmail.com', '123');
 INSERT INTO user (email, password) VALUES ('test@mail.com', '321');

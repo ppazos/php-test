@@ -9,7 +9,57 @@ if(!IS_AJAX) {die('Restricted access');}
     $mysqli=mysqli_connect($servername,$username,$password,"$dbname");
     if(!$mysqli) die('Could not Connect MySql Server:' .mysql_error());
         
-    if(isset($_POST['LoadData'])) {
+    if(isset($_POST['email']) && isset($_POST['password'])) {
+
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $email_query = "SELECT id, email FROM user WHERE email = '".$email."'";
+        $email_result = $mysqli->query($email_query);
+        
+        if($email_result->num_rows > 0){
+            $email_row = $email_result->fetch_assoc();
+            $password_query = "SELECT password FROM user WHERE password = '".$password."'";
+            $password_result = $mysqli->query($password_query);
+            
+            if($password_result->num_rows > 0){
+                $password_row = $password_result->fetch_assoc();
+
+                //Configuracion de la session
+                session_start();
+                $_SESSION['user'] = $email_row['id'];
+
+                echo json_encode(array(
+                    'error' => false,    
+                    "id" => $email_row['id'],
+                    "email" => $email_row['email'],
+                    "password" => $password_row['password'],
+                    "message" => 'Wellcome ID: '.$email_row['id'].' | '.$email_row['email'],
+                    ));
+            }else{
+                echo json_encode(array(
+                    'error' => true,    
+                    "message" => 'Invalid password',
+                    ));
+            }
+        }else{
+            echo json_encode(array(
+                'error' => true,    
+                "message" => 'User not found',
+                ));
+        }
+
+    } else if(isset($_POST['logOut'])) {
+
+        //Configuracion de la session (logout/test)
+        if (isset($_SESSION['user'])){
+            unset($_SESSION['user']);
+            session_destroy();
+        }
+        
+        echo 'logout';
+
+    } else if(isset($_POST['loadData'])) {
 
         $data = [];
         $query = "SELECT * FROM cpt";
