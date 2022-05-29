@@ -65,7 +65,7 @@ Este repositorio define una tarea para evaluar las habilidades de comprensión y
 
 1. Debe entregar el código PHP, un archivo SQL con el esquema de la base de datos, el script para cargar usuarios, el "composer.json" (definición del componente de Composer), y un documento en Markdown the GitHub "DOC.md" que explique lo que hizo.
 2. La forma de entrega es mediante la creación de un Pull Request desde su fork hacia este repositorio.
-3. Se valorará que además comparta un video con una pequeña demo del trabajo realizado, explicando los flujos de usuario que son soportados (no es necesario que explique el código). Puede subir el video a YouTuve y agregar el link en la documentación que entregue.
+3. Se valorará que además comparta un video con una pequeña demo del trabajo realizado, explicando los flujos de usuario que son soportados (no es necesario que explique el código). Puede subir el video a YouTube y agregar el link en la documentación que entregue.
 
 ## La fecha límite para la entrega es el domingo 29 de Mayo a las 23:59.
 
