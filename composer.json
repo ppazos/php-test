@@ -1,0 +1,16 @@
+{
+    "name": "test-php/alemenciones",
+    "description": "El index.php está en ./src y el script.sql en ./src/assets/sql",
+    "autoload": {
+        "psr-4": {
+            "TestPhp\\Alemenciones\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ale Menciones",
+            "email": "alemenciones@gmail.com"
+        }
+    ],
+    "require": {}
+}
