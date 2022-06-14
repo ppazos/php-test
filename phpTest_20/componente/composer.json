@@ -1,0 +1,22 @@
+{
+    "name": "ruthb/componente",
+    "description": "Returns ecommerce example",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "7.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ruthb\\Componente\\": "src/"
+        }
+    },
+    "repositories": [{
+        "type": "path",
+        "url": "phpTest_20/componente"
+    }],
+    "authors": [{
+        "name": "Ruthbri",
+        "email": "Ruthbri@gmail.com"
+    }]
+}
